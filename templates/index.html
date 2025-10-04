@@ -2,6 +2,40 @@
 
 {% block head %}
 <h1> template </h1>
+  <title>T703</title>
 {% endblock %}
 
-{% block body %}{% endblock %}
+{% block body %}
+    <h1 style = "color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;" 
+    >
+      T703's blog 
+      </h1>
+    <p>hello world</p>
+    <p>this is my first website,<br> just for fun </p>
+
+    <p>
+      my youtube channel: 
+      <a href="https://www.youtube.com/@Tien_703" target = "_blank"><abbr title="T703 is Tien and my birthday">T703</abbr></a>
+    </p>
+
+
+    <p>just trying to make a website </p>
+    <video id = "rickRol" style="display: none;" controls>
+      <source src="Rick Roll (Different link no ads).mp4" type = "video/mp4">
+    </video>
+
+    <button onclick="playVideo()" style = 'background-color: red;'> dont click this!</button>
+    <hr>
+    <a href="FAQs.html">FAQs</a>
+  </body>
+  <script>
+    function playVideo() {
+      const video =document.getElementById("rickRol");
+      video.style.display = "block";
+      video.play()
+
+    }
+  </script>
+{% endblock %}
